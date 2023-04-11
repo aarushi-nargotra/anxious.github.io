@@ -1,0 +1,41 @@
+#header{
+    /* to get them in center */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* header  */
+    padding: 20px 80px;
+    background-color: #E6E6FA;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#headerlabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+#headerlabel li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#headerlabel li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+}
+#headerlabel li a:hover,
+#headerlabel li a.active{
+    color: #56d482;}
+#navbar li a.active::after,
+#navbar li a.hover::after{
+    content:" ";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    border-bottom-color: #98FBBA;
+    bottom: -4px;
+    left: 20px;
+
+}    
